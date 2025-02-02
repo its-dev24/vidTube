@@ -8,7 +8,7 @@ import { ApiError } from "../utils/apiError.js";
 //     .json(new ApiResponse(200, "OK", "Health check passed"));
 // });
 
-const healthcheck = async (requestAnimationFrame, res) => {
+const healthcheck = async (req, res) => {
   try {
     return res
       .status(200)
